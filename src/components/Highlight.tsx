@@ -11,7 +11,7 @@ const Highlight = () => {
           Watch the event.
         </div>
       </div>
-      <div className="relative w-10/12 rounded-3xl overflow-hidden mb-32">
+      <div className="relative w-11/12 rounded-3xl overflow-hidden mb-48">
         <div className="text-white text-3xl font-medium absolute top-12 left-12">
           Enter A17 Pro. <br /> Game-changing chip. <br />
           Groundbreaking performance.
