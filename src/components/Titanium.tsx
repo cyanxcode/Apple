@@ -2,7 +2,7 @@ import video from "../assets/titanium.mp4";
 
 const Titanium = () => {
   return (
-    <div className="absolute z-10 flex justify-center items-center h-screen">
+    <div className=" z-10 flex justify-center items-center h-screen">
       <div className="text-3xl font-medium text-yellow-50 opacity-60 absolute top-48">
         iPhone 15 Pro
       </div>
