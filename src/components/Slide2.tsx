@@ -2,7 +2,7 @@ import video from "../assets/A17chip.mp4";
 
 const Highlight = () => {
   return (
-    <main className="w-full min-h-screen bg-neutral-900 flex flex-col items-center">
+    <main className="w-full min-h-screen bg-neutral-950 flex flex-col items-center">
       <div className="flex items-center justify-between w-full p-28 pb-12">
         <div className="text-6xl font-semibold text-neutral-400 ">
           Get the highlights.

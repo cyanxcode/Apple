@@ -1,8 +1,12 @@
-import Closer from "./components/Closer";
-import Explore from "./components/Explore";
-import Highlight from "./components/Highlight";
+import Closer from "./components/Slide3";
+import Explore from "./components/Slide4";
+import Highlight from "./components/Slide2";
 import Navbar from "./components/Navbar";
-import Titanium from "./components/Titanium";
+import Titanium from "./components/Slide1";
+import Phone from "./components/Slide5";
+import IOS from "./components/Slide6";
+import Shop from "./components/Slide7";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -12,7 +16,10 @@ function App() {
       <Highlight />
       <Closer />
       <Explore />
-      <main className="w-full min-h-screen bg-black flex flex-col items-center "></main>
+      <Phone />
+      <IOS />
+      <Shop />
+      <Footer />
     </main>
   );
 }

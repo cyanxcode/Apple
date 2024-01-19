@@ -4,7 +4,7 @@ import zoom2 from "../assets/zoom2.jpg";
 
 const Explore = () => {
   return (
-    <main className="w-full min-h-screen bg-neutral-900 flex flex-col items-center ">
+    <main className="w-full min-h-screen bg-neutral-950 flex flex-col items-center ">
       <div className="text-5xl font-semibold text-neutral-400 place-self-start ml-32 mt-40">
         Explore the full story.
       </div>
