@@ -18,8 +18,8 @@ const Shop = () => {
           Explore all iPhones
         </div>
       </div>
-      <div className="flex lg:gap-24 gap-10">
-        <div className="flex flex-col items-center gap-4 relative w-[35vw] lg:w-[40vw]">
+      <div className="flex gap-10 justify-center">
+        <div className="flex flex-col items-center gap-4 relative w-[35vw] lg:w-[30vw]">
           <img
             src={pro}
             className=" absolute lg:hover:scale-105 transition ease-in-out duration-300"
@@ -35,7 +35,7 @@ const Shop = () => {
             Buy
           </button>
         </div>
-        <div className="flex flex-col items-center gap-4 relative w-[35vw] lg:w-[40vw]">
+        <div className="flex flex-col items-center gap-4 relative w-[35vw] lg:w-[30vw]">
           <img
             src={base}
             className="absolute lg:hover:scale-105 transition ease-in-out duration-300"
@@ -53,7 +53,7 @@ const Shop = () => {
         </div>
       </div>
       <hr className=" w-10/12 lg:w-6/12 h-px my-[-3rem] bg-zinc-500 border-0" />
-      <div className="grid grid-cols-2 grid-rows-3 gap-x-6 lg:gap-x-20 gap-y-8">
+      <div className="grid grid-cols-2 grid-rows-3 gap-x-6 lg:gap-x-40 gap-y-8">
         <div className="lg:w-64 flex flex-col items-start pl-6 gap-4">
           <img src={icon1} alt="" />
           <div className="text-white text-xl lg:text-center font-semibold pr-4">

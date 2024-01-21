@@ -15,10 +15,10 @@ const Explore = () => {
         <div className="sm:col-span-2 my-14 sm:my-0">
           <video src={video} autoPlay muted className=""></video>
         </div>
-        <div className="aspect-square sm:w-[45vw]">
+        <div className="aspect-square sm:w-[45vw] lg:w-[30vw]">
           <img src={zoom1} className="size-full overflow-hidden" />
         </div>
-        <div className="aspect-square sm:w-[45vw]">
+        <div className="aspect-square sm:w-[45vw] lg:w-[30vw]">
           <img src={zoom2} className="size-full overflow-hidden" />
         </div>
         <div className="mt-20 sm:mt-0 text-lg sm:text-xl font-medium text-gray-400 p-6">
