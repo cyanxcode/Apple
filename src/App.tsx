@@ -7,10 +7,13 @@ import Phone from "./components/Slide5";
 import IOS from "./components/Slide6";
 import Shop from "./components/Slide7";
 import Footer from "./components/Footer";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 
 function App() {
   return (
-    <main className="flex flex-col items-center">
+    <main className="flex flex-col items-center overflow-x-hidden">
       <Navbar />
       <Titanium />
       <Highlight />

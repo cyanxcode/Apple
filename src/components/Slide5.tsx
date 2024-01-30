@@ -2,11 +2,44 @@ import chip from "../assets/chip.jpg";
 import phone from "../assets/iphone-15.png";
 import pubg from "../assets/pubg.jpg";
 import chamelleon from "../assets/chamelleon.jpg";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
 
 const Phone = () => {
+  useGSAP(() => {
+    gsap
+      .fromTo(
+        "#chip-5",
+        { scale: "1.5", autoAlpha: "0.2" },
+        { scale: "1", autoAlpha: "1" }
+      )
+      .duration(1.5);
+    gsap
+      .fromTo(
+        "#text-5",
+        { y: "30%", autoAlpha: "0" },
+        { y: "0%", autoAlpha: "100%", scrollTrigger: "#text-5" }
+      )
+      .duration(1);
+    gsap
+      .fromTo(
+        "#chamelleon",
+        { scale: "2", autoAlpha: "0.1" },
+        {
+          scale: "1",
+          autoAlpha: "1",
+          scrollTrigger: { trigger: "#chamelleon" },
+        }
+      )
+      .duration(0.5);
+  });
   return (
     <main className="w-full min-h-screen bg-black flex flex-col items-center ">
-      <img src={chip} className="mt-0 lg:mt-48 size-32 lg:size-44" />
+      <img
+        id="chip-5"
+        src={chip}
+        className="mt-0 lg:mt-48 size-32 lg:size-44"
+      />
       <div className="text-3xl lg:text-7xl font-bold text-white mt-10 lg:mt-20">
         A17 Pro chip.
       </div>
@@ -23,7 +56,10 @@ const Phone = () => {
           className="m-3 rounded-[65px] w-[calc(100%-2rem)] aspect-video object-cover absolute top-0 z-10 "
         ></img>
       </div>
-      <div className="flex flex-col lg:flex-row justify-around gap-[6vw]">
+      <div
+        id="text-5"
+        className="flex flex-col lg:flex-row justify-around gap-[6vw]"
+      >
         <div className="text-lg lg:text-xl font-medium text-gray-400 p-5 lg:py-20 lg:px-[10vw] lg:w-3/6">
           A17 Pro is an entirely new class of iPhone chip that delivers our
           <b className="text-white"> best graphics performance by far.</b>
@@ -49,7 +85,7 @@ const Phone = () => {
         From dramatic framing flexibility to next-generation portraits, see what
         you can do with our most powerful iPhone camera system.
       </div>
-      <img src={chamelleon} alt="" />
+      <img id="chamelleon" src={chamelleon} alt="" />
     </main>
   );
 };

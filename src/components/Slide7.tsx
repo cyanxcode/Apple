@@ -6,11 +6,25 @@ import icon3 from "../assets/icon3.png";
 import icon4 from "../assets/icon4.png";
 import icon5 from "../assets/icon5.png";
 import icon6 from "../assets/icon6.png";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
 
 const Shop = () => {
+  useGSAP(() => {
+    gsap
+      .fromTo(
+        "#nav-7",
+        { autoAlpha: "0", y: "100%" },
+        { autoAlpha: "1", y: "0%", scrollTrigger: "#nav-7" }
+      )
+      .duration(1);
+  });
   return (
-    <main className="w-full bg-neutral-950 flex items-center flex-col gap-32 pt-40">
-      <div className="flex flex-col lg:flex-row justify-between w-10/12 lg:items-center gap-4">
+    <main className=" w-full bg-neutral-950 flex items-center flex-col gap-32 pt-40">
+      <div
+        id="nav-7"
+        className="flex flex-col lg:flex-row justify-between w-10/12 lg:items-center gap-4"
+      >
         <div className="text-3xl lg:text-5xl font-semibold text-neutral-400 place-self-start">
           Keep exploring iPhone.
         </div>

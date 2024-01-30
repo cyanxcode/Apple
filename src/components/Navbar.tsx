@@ -3,7 +3,10 @@ import { IoIosSearch } from "react-icons/io";
 import { IoBagOutline } from "react-icons/io5";
 const Navbar = () => {
   return (
-    <nav className="absolute w-full h-12 flex justify-between lg:justify-center items-center gap-[5vw] z-20 px-10">
+    <nav
+      id="nav"
+      className="absolute w-full h-12 flex justify-between lg:justify-center items-center gap-[5vw] z-20 px-10"
+    >
       <FaApple size="20" color="white" />
       <div className=" h-12 flex w-0 collapse lg:visible lg:w-auto justify-center items-center gap-[5vw] z-20">
         <div className=" text-gray-300 text-xs cursor-pointer">Store</div>
