@@ -2,6 +2,7 @@ import { FaApple } from "react-icons/fa";
 import { IoIosSearch } from "react-icons/io";
 import { IoBagOutline } from "react-icons/io5";
 const Navbar = () => {
+  //Just a random comment.
   return (
     <nav
       id="nav"
