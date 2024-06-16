@@ -20,7 +20,7 @@ const Titanium = () => {
     <div className="z-10 flex justify-center items-center h-screen">
       <div
         id="title"
-        className=" text-xl sm:text-3xl font-medium text-yellow-50 opacity-60 absolute top-20 sm:top-48"
+        className=" text-xl sm:text-3xl font-medium text-yellow-50 opacity-60 absolute z-20 top-20 sm:top-48"
       >
         iPhone 15 Pro
       </div>
@@ -28,13 +28,13 @@ const Titanium = () => {
         src={video}
         autoPlay
         muted
-        className="collapse md:visible w-full sm:w-9/12 absolute"
+        className="collapse sm:visible w-full sm:w-9/12"
       ></video>
       <video
         src={video2}
         autoPlay
         muted
-        className="visible md:collapse w-full"
+        className="visible sm:collapse absolute w-full"
       ></video>
       <a
         id="btn"
