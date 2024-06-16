@@ -1,4 +1,5 @@
 import video from "../assets/titanium.mp4";
+import video2 from "/mobile-titanium.mp4";
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
 
@@ -23,7 +24,18 @@ const Titanium = () => {
       >
         iPhone 15 Pro
       </div>
-      <video src={video} autoPlay muted className=" w-full sm:w-9/12 "></video>
+      <video
+        src={video}
+        autoPlay
+        muted
+        className="collapse md:visible w-full sm:w-9/12 absolute"
+      ></video>
+      <video
+        src={video2}
+        autoPlay
+        muted
+        className="visible md:collapse w-full"
+      ></video>
       <a
         id="btn"
         href=""
